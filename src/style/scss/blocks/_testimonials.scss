@@ -1,0 +1,58 @@
+.testimonials {
+    padding: 70px 0 140px;
+
+    span {
+        display: block;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .image-holder,
+    .text-holder {
+        width: 50%;
+    }
+
+    .text-holder {
+        padding: 0 20px 0 127px;
+
+        .icon-holder img {
+            width: 100px;
+            margin-bottom: 30px;
+        }
+    
+        .quote-icon {
+            width: 36px;
+            margin-bottom: 10px;
+        }
+
+        .quote-title {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 600;
+            color: $black;
+            margin-bottom: 16px;
+        }
+
+        .quote {
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 25px;
+        }
+
+        .author {
+            font-size: 18px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        .profession {
+            font-size: 14px;
+            color: rgba(26, 10, 3, 0.8);
+        }
+    }
+}

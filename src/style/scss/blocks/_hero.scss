@@ -1,0 +1,105 @@
+.hero {
+    padding: 0 0 118px 0;
+
+    .container {
+        position: relative;
+    }
+
+    .swiper-slide {
+        justify-content: flex-start;
+    }
+
+    .text-holder,
+    .img-holder {
+        width: 40%;
+        position: relative;
+    }
+
+    .hero-title {
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 600;
+        font-size: 61px;
+        line-height: 73.2px;
+        color: $black;
+        margin-bottom: 20px;
+
+        .highlight-orange {
+            color: $orange;
+        }
+    }
+
+    .img-holder {
+        margin-left: 140px;
+        transition: all ease 0.3s;
+    }
+
+    #shoes-shadow {
+        position: absolute;
+        bottom: -25px;
+        right: 0;
+    }
+
+    #hero-shoes {
+        width: 150%;
+        position: absolute;
+        top: 0;
+        right: -20%;
+    }
+
+    .swiper-hero-next {
+        width: 70px;
+        height: 70px;
+        top: 40%;
+        right: 0;
+        cursor: pointer;
+
+        &::after {
+            top: 35%;
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+    .filter-holder {
+        max-width: 800px;
+        width: 100%;
+        padding: 30px 55px;
+        background-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0px 1px 14px rgba(26, 10, 3, 0.05);
+        border-radius: 5px;
+        position: absolute;
+        bottom: -160px;
+        left: 0px;
+        z-index: 15;
+
+        .filter-list-item {
+            padding: 0 45px 0 35px;
+            border-right: 1px solid $orange;
+
+            &:first-of-type {
+                padding-left: 0;
+            }
+
+            &:last-of-type {
+                padding-right: 0;
+                border: none;
+            }
+        }
+
+        .dropdown-name-holder {
+            margin-bottom: 10px;
+        }
+
+        .select-item {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.0);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+
+            &:focus {
+                outline: none;
+                color:$orange;
+            }
+        }
+    }
+}

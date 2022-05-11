@@ -1,0 +1,24 @@
+.video {
+    padding: 189px 0 70px;
+
+    .text-holder,
+    .video-holder {
+        width: 50%;
+    }
+
+    .text-holder {
+        padding-right: 125px;
+
+        .section-name {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+        }
+    }
+
+    .video-holder {
+        position: relative;
+    }
+}

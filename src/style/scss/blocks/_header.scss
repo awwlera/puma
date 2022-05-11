@@ -1,0 +1,35 @@
+.header {
+    padding: 40px 0 32px;
+
+    .logo-holder {
+        margin-right: 101px;
+    }
+
+    .nav-holder {
+        width: calc(100% - 195px);
+
+        @include breakpoint('md') {
+            visibility: hidden;
+        }
+
+        .header-nav {
+            justify-self: flex-start;
+        }
+    
+        .header-nav-item {
+            padding: 0 20px;
+        }
+
+        .header-nav-link:hover {
+            color: $orange;
+        }
+    }
+
+    .active {
+        visibility: visible;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}

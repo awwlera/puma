@@ -1,0 +1,127 @@
+.gallery {
+    padding: 70px 0;
+    position: relative;
+
+    .title-holder {
+        margin-bottom: 16px;
+
+        .section-name {
+            margin-bottom: 13px;
+        }
+    }
+
+    .tabs-wrapper {
+        position: relative;
+
+        .swiper-gallery-prev {
+            top: -10px;
+
+            &::after {
+                top: 17px;
+            }
+        }
+
+        .swiper-gallery-next {
+            top: -10px;
+
+            &::after {
+                top: 17px;
+            }
+        }
+
+        .nav-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+
+            .nav-item {
+                padding-right: 40px;
+            }
+
+            .tabs-link {
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .tab {
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+          }
+          
+          .tab.is-active {
+            text-decoration: underline;
+            color: $orange;
+          }
+
+          .tab-panel {
+            display: none;
+
+            &.is-active {
+              display: block;
+            }
+        }
+    }
+
+    .flex-col {
+        width: calc(100%/4);
+        padding: 0 15px;
+
+        .image-holder {
+            margin-bottom: 30px;
+            border: 2px solid $bg-main;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                border: 2px solid $orange;
+                border-radius: 10px;
+            }
+        }
+
+        a:hover {
+            color:$black
+        }
+
+        .card-title {
+            display: block;
+            font-family: 'Source Serif Pro', serif;
+            font-size: 22px;
+            line-height: 33px;
+            color: $black;
+            margin-bottom: 10px;
+        }
+
+        .card-size {
+            display: block;
+            margin-bottom: 10px;
+
+            .card-size-bold {
+                font-weight: 500;
+                padding-left: 10px;
+            }
+        }
+
+        .card-price {
+            display: block;
+            margin-bottom: 20px;
+
+            .card-price-bald {
+                font-weight: 500;
+                padding-left: 10px;
+            }
+        }
+
+        .btn:hover {
+            color:$white;
+        }
+    }
+
+    .swiper {
+        height: 400px;
+        overflow: hidden;
+    }
+}

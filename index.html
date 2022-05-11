@@ -8,9 +8,980 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
     <link rel="stylesheet" href="src/style/css/main.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="src/js/main.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container flex">
+            <div class="logo-holder">
+                <a href="#" class="logo-link">
+                    <img src="src/img/logo.svg" alt="puma logo" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-holder flex">
+                <nav class="header-nav">
+                    <ul class="header-nav-list flex">
+                        <li class="header-nav-item">
+                            <a href="#" class="header-nav-link">Menu</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#about" class="header-nav-link">About</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#feature" class="header-nav-link">Feature</a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="#gallery" class="header-nav-link">Gallery</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="btn-holder">
+                    <a href="#" class="btn">Buy now</a>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <button class="burder-btn">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="swiper swiper-hero">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex">
+                            <div class="text-holder">
+                                <h1 class="hero-title">Life is better in running <span class="highlight-orange">shoes</span>.</h1>
+                                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
+                            </div>
+                            <div class="img-holder">
+                                <img src="src/img/Rectangle 36.png" alt="rectangle" id="hero-cube">
+                                <img src="src/img/shadow.png" alt="shadow" id="shoes-shadow">
+                                <img src="src/img/shoes.png" alt="red sneakers" id="hero-shoes">
+                            </div>
+                            <div class="button-next swiper-hero-next"></div>
+                        </div>
+                        <div class="swiper-slide flex">
+                            <div class="text-holder">
+                                <h1 class="hero-title">Life is better in running <span class="highlight-orange">shoes</span>.</h1>
+                                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
+                            </div>
+                            <div class="img-holder">
+                                <img src="src/img/Rectangle 36.png" alt="rectangle" id="hero-cube">
+                                <img src="src/img/shadow.png" alt="shadow" id="shoes-shadow">
+                                <img src="src/img/shoes.png" alt="red sneakers" id="hero-shoes">
+                            </div>
+                            <div class="button-next swiper-hero-next"></div>
+                        </div>
+                        <div class="swiper-slide flex">
+                            <div class="text-holder">
+                                <h1 class="hero-title">Life is better in running <span class="highlight-orange">shoes</span>.</h1>
+                                <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices </p>
+                            </div>
+                            <div class="img-holder">
+                                <img src="src/img/Rectangle 36.png" alt="rectangle" id="hero-cube">
+                                <img src="src/img/shadow.png" alt="shadow" id="shoes-shadow">
+                                <img src="src/img/shoes.png" alt="red sneakers" id="hero-shoes">
+                            </div>
+                            <div class="button-next swiper-hero-next"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-holder flex">
+                    <div class="list-holder">
+                        <ul class="filter-list flex">
+                            <li class="filter-list-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-name-holder">
+                                        <span class="dropdown-name">Brand</span>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <form action="#" class="dropdown-select">
+                                            <select class="select-item" name="brand" id="brand">
+                                                <option value="puma" selected="selected">Puma</option>
+                                                <option value="adidas">Adidas</option>
+                                                <option value="reebok">Reebok</option>
+                                                <option value="nike">Nike</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-name-holder">
+                                        <span class="dropdown-name">Person</span>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <form action="#" class="dropdown-select">
+                                            <select class="select-item" name="person" id="person">
+                                                <option value="man" selected="selected">man</option>
+                                                <option value="woman">woman</option>
+                                                <option value="kids">kid</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-name-holder">
+                                        <span class="dropdown-name">Size</span>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <form action="#" class="dropdown-select">
+                                            <select class="select-item" name="size" id="size">
+                                                <option value="small">small</option>
+                                                <option value="medium">medium</option>
+                                                <option value="large" selected="selected">large</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list-item">
+                                <div class="dropdown">
+                                    <div class="dropdown-name-holder">
+                                        <span class="dropdown-name">Price</span>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <form action="#" class="dropdown-select">
+                                            <select class="select-item" name="price" id="price">
+                                                <option value="$100">$100</option>
+                                                <option value="$150" selected="selected">$150</option>
+                                                <option value="$200">$200</option>
+                                                <option value="$250">$250</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-holder">
+                        <button class="btn">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video" id="#about">
+            <div class="container flex">
+                <div class="text-holder">
+                    <span class="section-name">VIDEO</span>
+                    <h2 class="section-title">Desire the feel of satisfaction.</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas leo ultrices commauris risus.</p>
+                </div>
+                <div class="video-holder">
+                    <a href="src/img/video.png" data-fancybox="gallery">
+                        <img src="src/img/video.png" alt="image description" class="video-img">
+                    </a>
+                    <a href="https://www.youtube.com/embed/S5_AdmhWiSA" data-fancybox="gallery">
+                        <iframe width="950" height="534" style="display: none;" src="https://www.youtube.com/embed/S5_AdmhWiSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+                    <a href="https://www.youtube.com/embed/RMqv_GlnyR4" data-fancybox="gallery">
+                        <iframe width="950" height="534" style="display: none;" src="https://www.youtube.com/embed/RMqv_GlnyR4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                    </a>                    
+                </div>
+            </div>
+        </section>
+        <section class="feature" id="feature">
+            <div class="container">
+                <div class="text-holder">
+                    <span class="section-name">FEATURE</span>
+                    <h2 class="section-title">We have best feature in Shoes</h2>
+                </div>
+                <div class="card-holder flex">
+                    <div class="flex-col">
+                        <div class="card">
+                            <div id="quality" class="image-holder">
+                                <img src="src/img/quality.svg" alt="image description" class="img">
+                            </div>
+                            <div class="text-holder">
+                                <span class="card-title">Quality</span>
+                                <p class="card-description">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                                <a href="#" class="card-link">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="card">
+                            <div id="flexible" class="image-holder">
+                                <img src="src/img/flexible.svg" alt="image description" class="img">
+                            </div>
+                            <div class="text-holder">
+                                <span class="card-title">Flexible</span>
+                                <p class="card-description">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                                <a href="#" class="card-link">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="card">
+                            <div id="long-lasting" class="image-holder">
+                                <img src="src/img/long-lasting.svg" alt="image description" class="img">
+                            </div>
+                            <div class="text-holder">
+                                <span class="card-title">Long Lasting</span>
+                                <p class="card-description">Lorem ipsum dolor sit consectetur adipiscing elit. Viverra in ul</p>
+                                <a href="#" class="card-link">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="title-holder">
+                    <span class="section-name">GALLERY</span>
+                    <h2 class="section-title">40+ YEARS’ EXPERIENCE</h2>
+                </div>
+                <div class="categories-tabs">
+                    <div class="tabs-wrapper">
+                        <ul class="nav-tabs" role="tablist">
+                            <li class="nav-item">Categories:</li>
+                            <li class="nav-item tab is-active" data-role="tab" data-target="#tabs-all3">All</li>
+                            <li class="nav-item tab" data-role="tab" data-target="#tabs-male3">Male</li>
+                            <li class="nav-item tab" data-role="tab" data-target="#tabs-female3">Female</li>
+                            <li class="nav-item tab" data-role="tab" data-target="#tabs-kids3">Kids</li>
+                        </ul>
+                        <div class="button-prev swiper-button-prev swiper-gallery-prev"></div>
+                        <div class="button-next swiper-button-next swiper-gallery-next"></div>
+                        <div class="tab-content">
+                            <div class="tab-panel is-active" id="tabs-all3" role="tabpanel">
+                                <div class="swiper swiper-gallery-all">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tabs-male3" role="tabpanel">
+                                <div class="swiper swiper-gallery-all">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="tabs-female3" role="tabpanel">
+                                <div class="swiper swiper-gallery-all">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$150</span></p>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$150</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$250</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">M</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-panel" id="#tabs-kids3" role="tabpanel">
+                                <div class="swiper swiper-gallery-all">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                            </div>
+                                                            <div class="btn-holder">
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card-holder flex">
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery1.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma RS-X Bold</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery2.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Sneakers</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$180</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery3.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Ferrari</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$190</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="flex-col">
+                                                    <a href="#" class="card-link">
+                                                        <div class="card">
+                                                            <div class="image-holder">
+                                                                <img src="src/img/gallery4.png" alt="image description" class="img">
+                                                            </div>
+                                                            <div class="text-holder">
+                                                                <span class="card-title">Puma Running</span>
+                                                                <p class="card-size">Size:<span class="card-size-bold">Dubble-XL</span></p>
+                                                                <p class="card-price">Price:<span class="card-price-bald">$200</span></p>
+                                                                <a href="#" class="btn">Buy now</a>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <div class="title-holder">
+                    <h2 class="section-title">Testimonials</h2>
+                </div>
+                <div class="swiper swiper-testimonials">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex">
+                            <div class="image-holder">
+                                <img src="src/img/testimonials.png" alt="image descrition" class="img">
+                            </div>
+                            <div class="text-holder">
+                                <div class="icon-holder">
+                                    <img src="src/img/user.png" alt="user pic" class="icon">
+                                </div>
+                                <div class="quote-holder">
+                                    <img src="src/img/quotes.svg" alt="quote" class="quote-icon">
+                                    <span class="quote-title">Their services was best and friendly</span>
+                                    <span class="quote"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</em></span>
+                                    <span class="author">Abram Korsgaard</span>
+                                    <span class="profession">Athletic</span>
+                                </div>
+                            </div>
+                            <div class="button-prev swiper-button-prev"></div>
+                            <div class="button-next swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-slide flex">
+                            <div class="image-holder">
+                                <img src="src/img/testimonials.png" alt="image descrition" class="img">
+                            </div>
+                            <div class="text-holder">
+                                <div class="icon-holder">
+                                    <img src="src/img/user.png" alt="user pic" class="icon">
+                                </div>
+                                <div class="quote-holder">
+                                    <img src="src/img/quotes.svg" alt="quote" class="quote-icon">
+                                    <span class="quote-title">Their services was best and friendly</span>
+                                    <span class="quote"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</em></span>
+                                    <span class="author">Abram Korsgaard</span>                                    <span class="profession">Athletic</span>
+                                </div>
+                            </div>
+                            <div class="button-prev swiper-button-prev"></div>
+                            <div class="button-next swiper-button-next"></div>
+                        </div>
+                        <div class="swiper-slide flex">
+                            <div class="image-holder">
+                                <img src="src/img/testimonials.png" alt="image descrition" class="img">                            
+                            </div>
+                            <div class="text-holder">
+                                <div class="icon-holder">
+                                    <img src="src/img/user.png" alt="user pic" class="icon">
+                                </div>
+                                <div class="quote-holder">
+                                    <img src="src/img/quotes.svg" alt="quote" class="quote-icon">
+                                    <span class="quote-title">Their services was best and friendly</span>
+                                    <span class="quote"><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus tempor id faucibus quam lobortis.</em></span>
+                                    <span class="author">Abram Korsgaard</span>
+                                    <span class="profession">Athletic</span>
+                                </div>
+                            </div>                            
+                            <div class="button-prev swiper-button-prev"></div>
+                            <div class="button-next swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="signup">
+            <div class="container flex">
+                <div class="image-holder">
+                    <img src="src/img/puma-sign-up.png" alt="puma logo" class="signup-img">
+                </div>
+                <div class="text-holder">
+                    <h3 class="section-title">Sign up to our Newsletter</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu sagittis, Atiam lorem sed justo amet viverra in a.
+                    </p>
+                    <form action="#" class="form">
+                        <div class="input-holder flex">
+                            <input type="email" class="input" placeholder="Enter your email address">
+                            <button class="btn btn-send" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav flex">
+                <div class="footer-col">
+                    <div class="logo-holder">
+                        <a href="#" class="logo-link">
+                            <img src="src/img/logo.svg" alt="puma logo" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="https://www.google.com.ua/maps/@39.6520368,-100.5384236,6.78" class="contacts-link" target="_blank">10 New Town Street, V2 5NW, Newstate, USA.</a>
+                    </div>
+                    <div class="link-holder">
+                        <a href="mailto:shovasatkhira88@gmail.com" class="contacts-link" target="_blank">shovasatkhira88@gmail.com</a>
+                    </div>
+                    <div class="footer-social">
+                        <ul class="social-list flex">
+                            <li class="social-item">
+                                <a href="https://facebook.com/" class="social-link" target="_blank">
+                                    <img src="src/img/fb.svg" alt="facebook logo" class="social-img">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                                    <img src="src/img/inst.svg" alt="instagram logo" class="social-img">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://twitter.com/" class="social-link" target="_blank">
+                                    <img src="src/img/twitter.svg" alt="twitter logo" class="social-img">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="https://www.google.com/" class="social-link" target="_blank">
+                                    <img src="src/img/google.svg" alt="google logo" class="social-img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <div class="menu-title-holder">
+                        <span class="menu-title">Our services</span>
+                    </div>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                           <a href="#" class="footer-menu-link">About us</a> 
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Feature</a> 
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Gallery</a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="menu-title-holder">
+                        <span class="menu-title">Support</span>
+                    </div>
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">
+                           <a href="#" class="footer-menu-link">Privacy & Policy</a> 
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Terms & Condition</a> 
+                        </li>
+                        <li class="footer-menu-item">
+                            <a href="#" class="footer-menu-link">Support System</a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <div class="menu-title-holder">
+                        <span class="menu-title">Contact us</span>
+                    </div>
+                    <div class="text-holder">
+                        <span class="text">Lorem ipsum dolor sit amet consectetur adipiscin.</span>
+                    </div>
+                    <form action="#" class="form">
+                        <div class="input-holder flex">
+                            <input type="email" class="input" placeholder="Mail address">
+                            <button class="btn btn-send" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+            <div class="copy">
+                <span class="copy-text">Copyright 2021 The PUMA All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>   
 </body>
 </html>

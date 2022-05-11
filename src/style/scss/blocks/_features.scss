@@ -1,0 +1,100 @@
+.feature {
+    padding: 70px 0;
+
+    .section-name {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .card-holder {
+
+        .flex-col {
+            padding: 0 15px;
+            width: calc(100%/3);
+        }
+        
+        .card {
+            padding: 56px 60px;
+            background-color: rgba(255, 255, 255, 0.1);
+            ;
+            box-shadow: 0px 1px 30px rgba(26, 10, 3, 0.1);
+            border-radius: 10px;
+            transition: all ease-in-out 0.3s;
+
+            &:hover {
+                background: rgba(238, 85, 20, 0.1);
+            }
+    
+            .image-holder {
+                width: 140px;
+                height: 140px;
+                margin: 0 auto 38px;
+                border-radius: 50%;
+                position: relative;
+
+                .img {
+                    width: 75px;
+                    position: absolute;
+                    top: 33px;
+                    left: 33px;
+                }
+            }
+
+            #quality {
+                background-color: rgba(18, 101, 225, 0.1);
+            }
+
+            #flexible {
+                background-color:  rgba(95, 46, 234, 0.1);
+            }
+
+            #long-lasting {
+                background-color: rgba(170, 33, 234, 0.1);
+            }
+
+            .text-holder {
+                text-align: center;
+
+                .card-title {
+                    display: block;
+                    font-family: 'Source Serif Pro', serif;
+                    font-size: 22px;
+                    line-height: 33px;
+                    margin-bottom: 10px;
+                }
+
+                .card-description {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 22px;
+                    margin-bottom: 20px;
+                }
+
+                .card-link {
+                    color: $orange;
+                    transition: all ease-in-out 0.3s;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        border-bottom: 2px solid $black;
+                        border-left: 2px solid $black;
+                        margin-left: 10px;
+                        width:8px;
+                        height: 8px;
+                        transform: rotate(-133deg);
+                    }
+                }
+            }
+        }
+    }
+}

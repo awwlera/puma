@@ -1,0 +1,58 @@
+.footer {
+    padding-top: 100px;
+    background-color: rgba(238,85,20,0.04);
+
+    .footer-nav {
+        padding-bottom: 40px;
+        align-items: flex-start;
+
+        .footer-col:first-of-type {
+            max-width: 256px;
+        }
+
+        .footer-col:last-of-type {
+            max-width: 330px;
+        }
+
+        .logo-holder {
+            margin-bottom: 23px;
+        }
+
+        .link-holder {
+            margin-bottom: 20px;
+        }
+
+        .footer-social {
+            max-width: 155px;
+        }
+
+        .menu-title-holder {
+            margin-bottom: 31px;
+            color: $black;
+        }
+
+        .footer-menu-item {
+            margin-bottom: 10px;
+        }
+
+        .text-holder {
+            margin-bottom: 38px;
+        }
+
+        .input {
+            padding: 10px 20px;
+            width:223px;
+            height: 53px;
+        }
+    }
+
+    .copy {
+        padding: 30px 0;
+        text-align: center;
+        border-top: 1px solid #A6A4A4;
+
+        .copy-text {
+            font-weight: 500;
+        }
+    }
+}
