@@ -20,6 +20,10 @@
         .swiper-gallery-prev {
             top: -10px;
 
+            @include breakpoint('xs') {
+                top: 50px;
+            }
+
             &::after {
                 top: 17px;
             }
@@ -27,6 +31,10 @@
 
         .swiper-gallery-next {
             top: -10px;
+
+            @include breakpoint('xs') {
+                top: 50px;
+            }
 
             &::after {
                 top: 17px;
@@ -40,6 +48,10 @@
 
             .nav-item {
                 padding-right: 40px;
+
+                @include breakpoint('xs') {
+                    padding-right: 20px;
+                }
             }
 
             .tabs-link {
@@ -78,6 +90,10 @@
         @include breakpoint('md') {
             width: 50%;
             margin-bottom: 20px;
+        }
+
+        @include breakpoint('xs') {
+            width: 100%;
         }
 
         .image-holder {
@@ -134,7 +150,7 @@
         overflow: hidden;
 
         @include breakpoint('md') {
-            height: 850px;
+            height: auto;
         }
     }
 }

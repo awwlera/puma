@@ -1,6 +1,10 @@
 .hero {
     padding: 0 0 118px 0;
 
+    @include breakpoint('xs') {
+        padding: 0 0 70px 0;
+    }
+
     .container {
         position: relative;
     }
@@ -37,6 +41,11 @@
         @include breakpoint('md') {
             font-size: 46px;
             line-height: 60px;
+        }
+
+        @include breakpoint('xs') {
+            font-size: 40px;
+            line-height: 50px;
         }
 
         .highlight-orange {

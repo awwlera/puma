@@ -81,6 +81,11 @@ body {
         @include breakpoint('md') {
             font-size: 36px;
         }
+
+        @include breakpoint('xs') {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
     
     .btn {

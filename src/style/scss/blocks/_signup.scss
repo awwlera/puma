@@ -39,6 +39,10 @@
                 @include breakpoint('sm') {
                     width: 250px;
                 }
+
+                @include breakpoint('xs') {
+                    width: 155px;
+                }
             }
         }
     }
