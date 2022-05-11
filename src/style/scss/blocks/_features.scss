@@ -16,6 +16,11 @@
         .flex-col {
             padding: 0 15px;
             width: calc(100%/3);
+
+            @include breakpoint('md') {
+                width: 80%;
+                margin: 0 auto 20px;
+            }
         }
         
         .card {

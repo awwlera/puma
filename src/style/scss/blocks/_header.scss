@@ -1,35 +1,155 @@
 .header {
     padding: 40px 0 32px;
+    position: relative;
 
     .logo-holder {
         margin-right: 101px;
+
+        @include breakpoint('md') {
+            z-index: 15;
+        }
     }
 
     .nav-holder {
         width: calc(100% - 195px);
 
-        @include breakpoint('md') {
-            visibility: hidden;
-        }
-
         .header-nav {
             justify-self: flex-start;
+
+            @include breakpoint('md') {
+                flex-direction: column;
+                position:absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                padding: 20px 0;
+                z-index: 10;
+                background-color: $bg-main;
+                transition: all ease-in-out 0.3s;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        .header-nav-list {
+            @include breakpoint('md') {
+                flex-direction: column;
+                margin: 0 0 20px;
+            }
         }
     
         .header-nav-item {
             padding: 0 20px;
+
+            @include breakpoint('md') {
+                text-align: center;
+                display: block;
+                padding: 40px 0;
+            }
+
         }
 
         .header-nav-link:hover {
             color: $orange;
         }
-    }
 
-    .active {
-        visibility: visible;
+        .btn-holder {
+        
+            @include breakpoint('md') {
+                display: none;
+            }
+        }
     }
 
     .burger-menu {
         display: none;
+
+        @include breakpoint('md') {
+            display: block;
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+
+        .burger-btn {
+            @include breakpoint('md') {
+                width: 40px;
+                height: 30px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                z-index: 10;
+            }
+
+            span {
+                width: 40px;
+                height: 2px;
+                border-radius: 4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $orange;
+                transition: all ease-in-out 0.3s;
+            }
+
+            &::before {
+                content: '';
+                width: 40px;
+                height: 2px;
+                border-radius: 4px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $orange;
+                transition: all ease-in-out 0.3s;
+            }
+
+            &:after {
+                content: '';
+                width: 40px;
+                height: 2px;
+                border-radius: 4px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $orange;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+    }
+
+    &.active {
+
+        .header-nav {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .burger-menu {
+            z-index: 15;
+        }
+
+        .burger-btn {
+
+            span {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                bottom: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
     }
 }

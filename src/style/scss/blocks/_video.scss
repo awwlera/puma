@@ -1,13 +1,31 @@
 .video {
     padding: 189px 0 70px;
 
+    @include breakpoint('sm') {
+        padding: 10px 0 50px;
+    }
+
     .text-holder,
     .video-holder {
         width: 50%;
+
+        @include breakpoint('sm') {
+           width: 80%;
+           margin: 0 auto;
+        }
     }
 
     .text-holder {
         padding-right: 125px;
+
+        @include breakpoint('md') {
+            padding-right: 50px;
+        }
+
+        @include breakpoint('sm') {
+            padding: 0;
+            margin-bottom: 20px;
+        }
 
         .section-name {
             margin-bottom: 10px;

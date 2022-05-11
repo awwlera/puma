@@ -13,6 +13,17 @@
     .img-holder {
         width: 40%;
         position: relative;
+
+        @include breakpoint('md') {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .text-holder {
+        @include breakpoint('md') {
+            margin-bottom: 20px;
+        }
     }
 
     .hero-title {
@@ -23,6 +34,11 @@
         color: $black;
         margin-bottom: 20px;
 
+        @include breakpoint('md') {
+            font-size: 46px;
+            line-height: 60px;
+        }
+
         .highlight-orange {
             color: $orange;
         }
@@ -31,6 +47,10 @@
     .img-holder {
         margin-left: 140px;
         transition: all ease 0.3s;
+
+        @include breakpoint('md') {
+            margin: 0 auto;
+        }
     }
 
     #shoes-shadow {
@@ -53,6 +73,10 @@
         right: 0;
         cursor: pointer;
 
+        @include breakpoint('md') {
+            top: 20%;
+        }
+
         &::after {
             top: 35%;
             width: 22px;
@@ -72,9 +96,23 @@
         left: 0px;
         z-index: 15;
 
+        @include breakpoint('md') {
+            width: 90%;
+            left: 5%;
+            padding: 20px 30px;
+        }
+
+        @include breakpoint('sm') {
+            display: none;
+        }
+
         .filter-list-item {
             padding: 0 45px 0 35px;
             border-right: 1px solid $orange;
+
+            @include breakpoint('md') {
+                padding: 0 20px 0 20px;
+            }
 
             &:first-of-type {
                 padding-left: 0;

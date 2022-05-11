@@ -2,6 +2,10 @@
     padding: 70px 0;
     position: relative;
 
+    @include breakpoint('md') {
+        padding-bottom: 30px;
+    }
+
     .title-holder {
         margin-bottom: 16px;
 
@@ -71,6 +75,11 @@
         width: calc(100%/4);
         padding: 0 15px;
 
+        @include breakpoint('md') {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
         .image-holder {
             margin-bottom: 30px;
             border: 2px solid $bg-main;
@@ -123,5 +132,9 @@
     .swiper {
         height: 400px;
         overflow: hidden;
+
+        @include breakpoint('md') {
+            height: 850px;
+        }
     }
 }

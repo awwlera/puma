@@ -1,6 +1,10 @@
 .testimonials {
     padding: 70px 0 140px;
 
+    @include breakpoint('md') {
+        padding: 40px 0 80px;
+    }
+
     span {
         display: block;
     }
@@ -15,8 +19,20 @@
         width: 50%;
     }
 
+    .image-holder {
+        @include breakpoint('md') {
+            display: none;
+        }
+    }
+
     .text-holder {
         padding: 0 20px 0 127px;
+
+        @include breakpoint('md') {
+            width: 90%;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
 
         .icon-holder img {
             width: 100px;

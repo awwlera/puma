@@ -7,9 +7,20 @@
         .text-holder {
             width: 50%;
         }
+
+        .image-holder {
+            @include breakpoint('md') {
+                display: none;
+            }
+        }
         
         .text-holder {
             padding: 63px;
+
+            @include breakpoint('md') {
+                width:100%;
+                
+            }
 
             .section-title {
                 font-size: 31px;
@@ -24,6 +35,10 @@
             .input {
                 width: 340px;
                 padding: 15px 20px;
+
+                @include breakpoint('sm') {
+                    width: 250px;
+                }
             }
         }
     }

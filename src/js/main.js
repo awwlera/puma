@@ -46,5 +46,12 @@ tabs.forEach((tab) => {
   });
 });
 
+const header = document.querySelector('.header');
+const burgerBtn = document.querySelector('.burger-btn');
+
+burgerBtn.addEventListener('click', ()=> {
+  header.classList.toggle('active');
+});
+
 
 
